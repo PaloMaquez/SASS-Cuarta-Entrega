@@ -35,9 +35,6 @@ $color_perano_approx: #a6c1ee;
 $white_46_6: rgba(255, 255, 255, 0.466);
 $color_mine_shaft_approx: #444;
 
-//urls
-$url_0: url(../img/bbbbb.png);
-
 html {
 	height: 100%;
 	width: 100%;
@@ -338,6 +335,13 @@ figcaption {
 	}
 }
 /*-----NOSOTRAS-----*/
+.bod-nosotras {
+	margin: 0;
+	padding: 0;
+	background: url(../img/bbbbb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .text {
 	position: absolute;
 	top: 65px;
@@ -345,7 +349,8 @@ figcaption {
 	bottom: 10px;
 	right: 10px;
 	line-height: 25px;
-	font-family: $font_5;
+	font-family: $font_2;
+	font-size: 15px;
 	overflow: hidden;
 	outline: none;
 	> h4 {
@@ -414,9 +419,11 @@ figcaption {
 	padding: 10px 0;
 	box-shadow: 0 0 6px 0 $white_12_3;
 	border-radius: 100px;
+	.form{
 	width: 100%;
 	top: 10px;
 	margin: 0;
+	}
 }
 @keyframes float {
 	0% {
