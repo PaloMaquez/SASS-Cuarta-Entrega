@@ -138,6 +138,12 @@ h4 {
   margin: 0 auto;
   background-color: transparent;
 }
+.container .img {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .container video {
   width: 70%;
   display: block;
