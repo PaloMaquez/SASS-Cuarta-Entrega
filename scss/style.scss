@@ -166,7 +166,7 @@ border-right-color: transparent;
 			margin: 0 auto;
 			background-color: transparent;
 		}
-		.img {
+		img {
 			width: 70%;
 			display: block;
 			margin-left: auto;
@@ -221,9 +221,9 @@ figcaption {
 			padding: 0.5rem 1rem;
 			transition: all 0.3s linear;
 			border-radius: 30px;
-		}
-		&:hover {
-			background: #c779d0;
+			&:hover {
+				background: #c779d0;
+			}
 		}
 }
 /*-----REVIEWS-----*/
@@ -422,10 +422,10 @@ figcaption {
 	box-shadow: 0 5px 15px 0 $black_60;
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
-	padding: 10px 0;
+	padding: 20% 0;
 	box-shadow: 0 0 6px 0 $white_12_3;
 	border-radius: 100px;
-		.form{
+		form{
 		width: 100%;
 		top: 10px;
 		margin: 0;
@@ -466,7 +466,7 @@ figcaption {
 }
 .circle2 {
 	background: $color_texas_rose_approx;
-	bottom: -7%;
+	bottom: 15%;
 	right: 24%;
 	animation: float 4s ease-in-out alternate infinite;
 }
@@ -487,16 +487,13 @@ input {
 		&:focus {
 			outline: none;
 			color: $color_dorado_approx;
-			~ label {
+			label {
 				position: absolute;
 				top: -14px;
 				font-size: 12px;
 				color: $color_dodger_blue_approx;
-				top: -14px;
-				font-size: 12px;
-				color: $color_dodger_blue_approx;
 			}
-			~ .barra::before {
+			.barra::before {
 				width: 100%;
 				width: 100%;
 			}
@@ -513,10 +510,9 @@ input {
 }
 label {
 	color: $black;
-	font-size: 16px;
+	font-size: px;
 	position: absolute;
 	left: 5px;
-	top: 10px;
 	transition: 0s ease all;
 	pointer-events: none;
 }
@@ -556,6 +552,7 @@ button {
 	position: relative;
 	left: 0;
 	top: 10px;
+	bottom: 0;
 	width: 100%;
 		a {
 			color: $white;
