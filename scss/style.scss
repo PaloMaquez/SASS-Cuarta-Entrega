@@ -496,20 +496,20 @@ input {
 				top: -14px;
 				font-size: 12px;
 				color: $color_dodger_blue_approx;
+				.valid{
+					position: absolute;
+					top: -14px;
+					font-size: 12px;
+					color: $color_dodger_blue_approx;
+					top: -14px;
+					font-size: 12px;
+					color: $color_dodger_blue_approx;
+				}
 			}
-			.barra::before {
+			.barra{
 				width: 100%;
 				width: 100%;
 			}
-		}
-		&:valid ~ label {
-			position: absolute;
-			top: -14px;
-			font-size: 12px;
-			color: $color_dodger_blue_approx;
-			top: -14px;
-			font-size: 12px;
-			color: $color_dodger_blue_approx;
 		}
 }
 label {

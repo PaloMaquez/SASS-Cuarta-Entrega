@@ -429,6 +429,74 @@ figcaption {
   position: relative;
   margin: 60px;
 }
+input,
+textarea {
+  background: none;
+  color: #000000;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #1919193a;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  color: rgb(94, 93, 93);
+}
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -14px;
+  font-size: 12px;
+  color: #2196f3;
+}
+input:focus ~ .barra::before,
+textarea:focus ~ .barra::before {
+  width: 100%;
+}
+
+.barra {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.barra::before {
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #feac5e,
+    #c779d0,
+    #4bc0c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: 0.8s ease width;
+  left: 0;
+}
+
+input:focus ~ .barra::before {
+  width: 100%;
+}
 
 @keyframes float {
   0% {
@@ -497,11 +565,7 @@ input:focus label {
   font-size: 12px;
   color: #2196f3;
 }
-input:focus .barra::before {
-  width: 100%;
-  width: 100%;
-}
-input:valid ~ label {
+input:focus label .valid {
   position: absolute;
   top: -14px;
   font-size: 12px;
@@ -509,6 +573,10 @@ input:valid ~ label {
   top: -14px;
   font-size: 12px;
   color: #2196f3;
+}
+input:focus .barra {
+  width: 100%;
+  width: 100%;
 }
 
 label {
